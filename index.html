@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Hunter || Abhishek</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body onload="characters()">
+
+    <!-- header -->
+    <div class="navbar">
+        <h1 class="heading">Super<span>Hero</span> - Abhishek Mishra</h1>
+        <a href="favorites.html">Favorites</a>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+        <div class="searched">
+            <!-- form for search -->
+            <form id="searchForm">
+                <input type="text" placeholder="Search Marvels...." name="search" id="search"></input>
+                <button class="s_btn" type="submit">submit</button>
+            </form>
+            
+            <div class="result">
+                <div id="characterSection">
+                    <h2 id="noData"></h2>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="sim_res">
+            <hr>
+            <h2 class="other_results">Similer Results.....</h2>
+            <hr>
+        </div>
+
+        <div class="comics-character">
+            <div id="comic-section">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- <button onclick="pageChanger()" type="button">Button changer</button> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script scr="./js/autoSearchComplete.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
